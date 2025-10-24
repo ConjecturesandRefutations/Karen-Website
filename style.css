@@ -1,0 +1,34 @@
+#invert-toggle {
+  position: fixed;
+  left: 5%;
+  bottom: 5% !important;
+  border: none;
+  border-radius: 8px;       /* slightly more rounded */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* deeper shadow */
+  z-index: 9999;
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+  opacity: 0.9;             /* slightly transparent */
+}
+
+/* Light mode styling (dark button) */
+#invert-toggle.light-mode {
+  background: rgba(34,34,34,0.9); /* dark + transparency */
+  color: #fff;
+}
+
+/* Dark mode styling (light button) */
+#invert-toggle.dark-mode {
+  background: rgba(255,255,255,0.95); /* light + slightly transparent */
+  color: #000;
+}
+
+/* Hover effect */
+#invert-toggle:hover {
+  transform: translateY(-2px);                 /* subtle lift */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);     /* stronger shadow */
+  opacity: 1;                                  /* fully opaque on hover */
+}
