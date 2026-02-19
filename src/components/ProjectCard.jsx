@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
+import upRightArrow from "../assets/images/up-right-arrow.svg";
 
 export default function ProjectCard({ project }) {
   return (
-    <Link to={`/projects/${project.id}`} className="project-card">
-      <img src={project.featuredImage} alt={project.title} />
+    <div class="project-card">
+    
       <div className="project-meta">
-        <h3>{project.title}</h3>
-        <p>{project.category}</p>
+        <p className="project-category">{project.category}</p>
+         <Link to={`/project/${project.id}`}>
+          <h3 className="project-title">{project.title}<img className="up-right-arrow" src={upRightArrow}/></h3>
+        </Link>
       </div>
+
+    <Link to={`/project/${project.id}`}>
+      <img
+        className="project-card-featured-image"
+        src={project.featuredImage}
+        alt={project.title}
+      />
     </Link>
+    </div>
   );
 }

@@ -1,0 +1,82 @@
+.home *{
+  color: white;
+}
+
+.project-section {
+  background: black; /* only this area has black */
+  padding-top: 100px; /* so content isn’t too close to opening section */
+}
+
+.project-grid {
+  margin-top: -100px; /* pulls project cards up visually */
+  background: none;    /* remove black from grid itself */
+}
+
+
+.project-category{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(125, 125, 125)
+}
+
+.opening-section{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: white;
+}
+
+.main-title{
+  font-family: "Neulis", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+.project-title {
+  font-family: "Neulis", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-top: 0;
+}
+  
+.project-card-featured-image {
+  width: 763px;
+  height: 553px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  color: inherit;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.project-meta {
+  flex: 1;
+}
+
+.project-title {
+  display: inline-flex; 
+  align-items: center;  
+  gap: 0.5rem;         
+}
+
+.project-title img.up-right-arrow {
+  width: 1em;       
+  height: 1em;
+  object-fit: contain;
+}
