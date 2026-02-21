@@ -2,36 +2,46 @@
   color: white;
 }
 
+.contact-link{
+  color: black;
+  font-family: "Neulis", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 3%;
+  right: 10%;
+}
+
 .project-section {
-  background: black; /* only this area has black */
-  padding-top: 100px; /* so content isn’t too close to opening section */
+  background: black; 
+  padding-top: 100px;
 }
 
 .project-grid {
-  margin-top: -100px; /* pulls project cards up visually */
-  background: none;    /* remove black from grid itself */
+  background: none; 
+  padding-bottom: 200px;
 }
-
 
 .project-category{
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: rgb(125, 125, 125)
+    color: rgb(125, 125, 125);
+    margin-left: 3px;
 }
 
 .opening-section{
-  padding-left: 50px;
+  padding-left: 10%;
   padding-right: 50px;
   padding-top: 100px;
-  padding-bottom: 200px;
   background: white;
+  min-width: 100vw;
+  min-height: 60vh;
 }
 
 .main-title{
   font-family: "Neulis", sans-serif;
-  font-weight: 500;
-  font-size: 5rem;
+  font-weight: 300;
+  font-size: 4.8rem;
   margin-top: 0;
   margin-bottom: 0;
   color: black;
@@ -39,17 +49,18 @@
 
 .project-title {
   font-family: "Neulis", sans-serif;
-  font-weight: 500;
-  font-size: 3.2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
   margin-top: 0;
 }
   
 .project-card-featured-image {
-  width: 763px;
-  height: 553px;
+  max-width: 763px;
+  max-height: 553px;
   object-fit: cover;
   display: block;
   border-radius: 5px;
+  transition: transform 0.2s ease;
 }
 
 .project-card {
@@ -62,7 +73,9 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .project-meta {
@@ -79,4 +92,69 @@
   width: 1em;       
   height: 1em;
   object-fit: contain;
+}
+
+@media(min-width:769px){
+.project-grid {
+  margin-top: -100px; /* pulls project cards up visually */
+  background: none;    /* remove black from grid itself */
+}
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* align content to the left */
+    gap: 1rem; /* reduce gap for mobile */
+  }
+
+  .project-card img {
+    width: 100%; /* make images full-width */
+    height: auto; /* keep aspect ratio */
+  }
+  .opening-section{
+    padding: 30px;
+  }
+  .main-title{
+    font-size: 50px;
+  }
+  .project-card{
+    padding: 30px;
+  }
+  .project-title{
+    font-size: 30px;
+  }
+  .project-category{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .opening-section{
+    min-height: 30vh;
+  }
+  .contact-link{
+    right: 5%;
+    top: 0%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width:769px){
+    .project-title{
+        font-size: 2.5rem
+    }
+    .project-category{
+    font-size: 0.9rem
+   }
+    .project-card{
+        padding-left: 20px;
+    }
+  .project-card-featured-image{
+      max-width: 400px;
+      max-height: 400px
+  }
+  .project-grid{
+    margin-top: -50px;
+  }
+  .opening-section{
+    min-height: 40vh;
+  }
 }
