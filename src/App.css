@@ -231,6 +231,10 @@
   .opening-section{
     align-content: center !important
 }
+.contact-drawer{
+    left: 50%;
+    transform: translate(-50%);
+}
 }
 
 @media (max-width: 1200px) and (min-width:769px){
