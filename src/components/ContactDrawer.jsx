@@ -25,9 +25,9 @@
             <span className="contact-drawer__label">Phone</span>
             <span className="contact-drawer__value">+49 176 87008490</span>
             </a>
-            <a href="mailto:nimbostratus.k@gmail.com">
+            <a href="mailto:karen.natharen@gmail.com">
             <span className="contact-drawer__label">Email</span>
-            <span className="contact-drawer__value">nimbostratus.k@gmail.com</span>
+            <span className="contact-drawer__value">karen.natharen@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/karen-natharen/" target="_blank" rel="noreferrer">
             <span className="contact-drawer__label">LinkedIn</span>
