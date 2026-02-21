@@ -62,9 +62,9 @@ export const projects = [
     images: [
       visaTwo,
       visaThree,
+      visaFeatured,
       visaFour,
       visaFive,
-      visaFeatured
     ]
   }
 ];
