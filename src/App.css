@@ -76,7 +76,8 @@
 }
 
 /* hover state */
-.project-title:hover::after {
+.project-title:hover::after, .contact-link:hover::after,
+.back-to-projects-link:hover::after {
   transform: scaleX(1);
 }
 
@@ -114,9 +115,15 @@
   gap: 0.5rem;         
 }
 
-.project-title img.up-right-arrow {
+.project-title img.up-right-arrow{
   width: 1em;       
   height: 1em;
+  object-fit: contain;
+}
+
+.up-left-arrow{
+  width: 1.5em;       
+  height: 1.5em;
   object-fit: contain;
 }
 
@@ -176,7 +183,7 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #999;
+  color: rgb(125, 125, 125);
   margin-bottom: 0.1rem;
   font-family: 'Montserrat', sans-serif;
 }
@@ -185,6 +192,156 @@
   font-size: 0.95rem;
   color: white;
   font-family: "Neulis", sans-serif;
+}
+
+.project-page {
+  background-color: #0a0a0a;
+  color: #f0ede8;
+  min-height: 100vh;
+  padding: 4rem 6vw 8rem;
+  box-sizing: border-box;
+}
+
+/* ── Title ────────────────────────────────────────────── */
+.inner-project-title {
+  font-family: "Neulis", sans-serif;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.6rem;
+  color: #ffffff;
+
+  /* Subtle text grain */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Category tag ─────────────────────────────────────── */
+.inner-project-category {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(125, 125, 125);
+  margin: 0 0 4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #222;
+}
+
+/* ── Content wrapper ──────────────────────────────────── */
+.inner-project-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;   
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ── Body text ────────────────────────────────────────── */
+.inner-project-content-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: white;
+  position: sticky;
+  top: 2rem;
+  margin: 0;
+  letter-spacing: 0.05rem !important
+}
+
+/* ── Masonry image grid ───────────────────────────────── */
+
+.masonry-grid {
+  columns: 2;
+  column-gap: 1rem;
+}
+
+.masonry-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  object-fit: cover;
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.masonry-grid img:hover {
+  filter: brightness(1) contrast(1.1);
+  transform: scale(1.01);
+}
+
+/* ── Fallback: if images are direct children (no wrapper div) ── */
+/* Stack images in a single CSS-columns pseudo-masonry */
+.inner-project-content:not(:has(.masonry-grid)) img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  filter: brightness(0.92) contrast(1.05);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* Force image group to behave as masonry block */
+.inner-project-content:not(:has(.masonry-grid)) {
+  grid-template-columns: 1fr 2fr;
+}
+
+.back-to-projects-link{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(125, 125, 125);
+  margin: 0 0 4rem;
+}
+
+
+/* ── Responsive: stack at 768px ───────────────────────── */
+@media (max-width: 768px) {
+  .project-page {
+    padding: 2.5rem 5vw 5rem;
+  }
+
+  .inner-project-title {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+  }
+
+  .project-page > p {
+    margin-bottom: 2.5rem;
+  }
+
+  .inner-project-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .inner-project-content > p {
+    position: static;
+  }
+
+  .masonry-grid {
+    columns: 2;
+    column-gap: 0.6rem;
+  }
+
+  .masonry-grid img {
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    columns: 1;
+  }
 }
 
 @media(min-width:769px){
@@ -228,6 +385,12 @@
     right: 5%;
     top: 0%;
   }
+  .back-to-projects-link{
+    top: 3%;
+  }
+  .inner-project-title{
+    margin-top: 5%
+}
   .opening-section{
     align-content: center !important
 }
@@ -242,7 +405,7 @@
         font-size: 2.5rem
     }
     .project-category{
-    font-size: 0.9rem
+    font-size: 0.75rem
    }
     .project-card{
         padding-left: 20px;

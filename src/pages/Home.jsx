@@ -13,7 +13,6 @@ export default function Home() {
     <div className="home">
       <div className="opening-section">
         <h1 className="main-title">Karen Natharen</h1>
-        {/* make contact clickable */}
         <p className="contact-link" onClick={openDrawer} style={{ cursor: "pointer" }}>
           Contact
         </p>
@@ -25,7 +24,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Render the drawer */}
       <ContactDrawer isOpen={isDrawerOpen} onClose={closeDrawer} />
     </div>
   );
