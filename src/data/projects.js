@@ -10,6 +10,7 @@ import bienestarFeatured from "../assets/images/Bienestar/Featured.jpg";
 import bienestarTwo from "../assets/images/Bienestar/Two.png";
 import bienestarThree from "../assets/images/Bienestar/Three.png";
 import bienestarFour from "../assets/images/Bienestar/Four.png";
+import bienestarFive from "../assets/images/Bienestar/Five.png";
 
 // Visa Conexiones
 import visaFeatured from "../assets/images/Visa_Conexiones/Featured.jpg";
@@ -48,6 +49,7 @@ export const projects = [
       bienestarTwo,
       bienestarThree,
       bienestarFour,
+      bienestarFive,
       bienestarFeatured
     ]
   },
