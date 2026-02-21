@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
               style={{
                 transform: `scale(${scale})`,
                 transformOrigin: "center",
-                transition: "transform 0.3s ease-out",
+                transition: "transform 0.5s ease-out",
                 width: "100%",
                 display: "block",
               }}
