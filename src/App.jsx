@@ -2,10 +2,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
 import "./App.css";
+import ScrollToTop from "./helpers/ScrollToTop";
+
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/:id" element={<ProjectPage />} />
