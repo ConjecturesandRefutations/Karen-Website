@@ -1,4 +1,5 @@
     import { useEffect, useRef } from "react";
+    import { Link } from "react-router-dom";
 
     export default function ContactDrawer({ isOpen, onClose }) {
     const drawerRef = useRef(null);
@@ -21,18 +22,15 @@
         >
         <button className="contact-drawer__close" onClick={onClose}>✕</button>
         <div className="contact-drawer__content">
-            <a href="tel:+4917687008490">
-            <span className="contact-drawer__label">Phone</span>
-            <span className="contact-drawer__value">+49 176 87008490</span>
-            </a>
-            <a href="mailto:karen.natharen@gmail.com">
-            <span className="contact-drawer__label">Email</span>
-            <span className="contact-drawer__value">karen.natharen@gmail.com</span>
-            </a>
-            <a href="https://www.linkedin.com/in/karen-natharen/" target="_blank" rel="noreferrer">
-            <span className="contact-drawer__label">LinkedIn</span>
-            <span className="contact-drawer__value">/in/karen-natharen</span>
-            </a>
+            <Link to={`/`}>
+                <span className="contact-drawer__value">Home</span>
+            </Link>
+            <Link to={`/about`}>
+                <span className="contact-drawer__value">About</span>
+            </Link>
+            <Link to={`/contact`}>
+                <span className="contact-drawer__value">Contact</span>
+            </Link>
         </div>
         </div>
     );

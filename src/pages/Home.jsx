@@ -12,10 +12,7 @@ export default function Home() {
   return (
     <div className="home">
       <div className="opening-section">
-        <h1 className="main-title">Karen Natharen</h1>
-        <p className="contact-link" onClick={openDrawer} style={{ cursor: "pointer" }}>
-          Contact
-        </p>
+        <h1 className="main-title">Exhibition designer, Creative director and producer</h1>
       </div>
 
       <div className="project-grid">

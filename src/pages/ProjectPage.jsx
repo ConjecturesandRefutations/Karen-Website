@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projects";
-import { Link } from "react-router-dom";
 import LightBox from "../components/LightBox";
-import upLeftArrow from "../assets/images/up-left-arrow.svg";
 import "../styles/LightBox.css";
 
 export default function ProjectPage() {
@@ -22,7 +20,6 @@ export default function ProjectPage() {
     <div className="project-page">
       <h1 className="inner-project-title">{project.title}</h1>
       <p className="inner-project-category">{project.category}</p>
-      <Link to="/" className="back-to-projects-link"><img src={upLeftArrow} className="up-left-arrow"/> Back to all Projects</Link>
 
       <div className="inner-project-content">
         <p className="inner-project-content-body">{project.content}</p>
