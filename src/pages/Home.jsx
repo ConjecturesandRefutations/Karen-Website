@@ -3,18 +3,24 @@ import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
-  const [introVisible, setIntroVisible] = useState(true);
-  const [introRendered, setIntroRendered] = useState(true);
+  const [introVisible, setIntroVisible] = useState(false);
+  const [introRendered, setIntroRendered] = useState(false);
 
-useEffect(() => {
-  const fadeTimer = setTimeout(() => {
-    setIntroVisible(false);
-  }, 2000);
+  useEffect(() => {
+    const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
 
-  return () => {
-    clearTimeout(fadeTimer);
-  };
-}, []);
+    if (!hasSeenIntro) {
+      setIntroVisible(true);
+      setIntroRendered(true);
+      sessionStorage.setItem("hasSeenIntro", "true");
+
+      const fadeTimer = setTimeout(() => {
+        setIntroVisible(false);
+      }, 2500);
+
+      return () => clearTimeout(fadeTimer);
+    }
+  }, []);
 
   return (
     <div className="home">
