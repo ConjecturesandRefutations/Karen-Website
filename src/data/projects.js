@@ -24,7 +24,7 @@ export const projects = [
   {
     id: "banco-de-mexico",
     title: "Banco de Mexico",
-    category: "Installation",
+    category: "Concept & Exhibition Design",
     featuredImage: bancoFeatured,
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.
@@ -40,7 +40,7 @@ export const projects = [
   {
     id: "bienestar",
     title: "Bienestar",
-    category: "Interactive Media",
+    category: "Concept & Exhibition Design",
     featuredImage: bienestarFeatured,
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.
@@ -56,7 +56,7 @@ export const projects = [
   {
     id: "visa_conexiones",
     title: "Visa Conexiones",
-    category: "Interactive Media",
+    category: "Concept & Exhibition Design",
     featuredImage: visaFeatured,
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.

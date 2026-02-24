@@ -16,7 +16,7 @@ export default function Home() {
 
       const fadeTimer = setTimeout(() => {
         setIntroVisible(false);
-      }, 3500);
+      }, 2700);
 
       return () => clearTimeout(fadeTimer);
     }
