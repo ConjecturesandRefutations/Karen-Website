@@ -240,7 +240,7 @@
 /* ── Title ────────────────────────────────────────────── */
 .inner-project-title {
   font-family: "Neulis", sans-serif;
-  font-size: clamp(2.8rem, 7vw, 4.8rem);
+  font-size: clamp(2.7rem, 7vw, 3.8rem);
   font-weight: 300;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -270,13 +270,13 @@
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
   align-items: start;   
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ── Body text ────────────────────────────────────────── */
 .inner-project-content-body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 300;
   color: white;

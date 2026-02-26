@@ -22,7 +22,9 @@ export default function ProjectPage() {
       <p className="inner-project-category">{project.category}</p>
 
       <div className="inner-project-content">
-        <p className="inner-project-content-body">{project.content}</p>
+        <p className="inner-project-content-body">  {project.content.map((paragraph, i) => (
+    <p key={i}>{paragraph}</p>
+  ))}</p>
 
         <div className="masonry-grid">
           {project.images.map((img, index) => (

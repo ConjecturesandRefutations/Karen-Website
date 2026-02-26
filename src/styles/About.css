@@ -1,0 +1,55 @@
+.about-title, .about-intro-text{
+    color: white !important;
+}
+
+.about{
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.about-title{
+    font-family: "Neulis", sans-serif;
+    font-weight: 300;
+    font-size: clamp(2.7rem, 7vw, 3.8rem);
+    margin-top: 0;
+}
+
+.about-intro-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 0.05rem !important;
+    max-width: 500px
+}
+
+.profile-photo{
+    max-width: 300px
+}
+
+@media (max-width: 768px) {
+    .about{
+        padding-left: 30px
+    }
+}
+
+@media (max-width: 1200px) and (min-width:769px){
+    .about{
+        padding-left: 20px
+    }
+}
+
+@media(max-width:768px){
+    .about-title{
+        margin-top: 15%
+    }
+}
+
+@media(min-width:769px){
+    .about{
+    display: flex;
+    column-gap: 5%;
+    justify-content: space-between;
+}
+}

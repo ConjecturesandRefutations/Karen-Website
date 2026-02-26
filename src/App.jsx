@@ -6,6 +6,7 @@ import ProjectPage from "./pages/ProjectPage";
 import Header from "./components/Header";
 import "./App.css";
 import "./styles/Header.css";
+import "./styles/About.css";
 import ScrollToTop from "./helpers/ScrollToTop";
 
 
