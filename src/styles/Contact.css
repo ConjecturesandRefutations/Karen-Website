@@ -1,0 +1,236 @@
+.contact{
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 8%;
+  display: flex;
+  justify-content: center
+}
+
+/* ── Root Variables ──────────────────────────────────────── */
+:root {
+  --bg:         #0d0d0f;
+  --surface:    #13131a;
+  --border:     #2a2a38;
+  --border-focus: #c9a96e;
+  --text:       #f0ece4;
+  --text-muted: #6b6880;
+  --accent:     #c9a96e;
+  --accent-glow:rgba(201, 169, 110, 0.18);
+  --error:      #e05c5c;
+  --radius:     5px;
+  --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Form Shell ──────────────────────────────────────────── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 48px 44px;
+  max-width: 520px;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+
+  /* Subtle top-left light bleed */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 60% 40% at 10% 0%,
+      rgba(201,169,110,0.07) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+}
+
+/* ── Form Wrapper (label + input group) ──────────────────── */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+/* ── Label ───────────────────────────────────────────────── */
+.form-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.form-wrapper:focus-within .form-label {
+  color: var(--accent);
+}
+
+/* ── Input Wrapper (input + icon) ────────────────────────── */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon */
+.input-wrapper ion-icon {
+  position: absolute;
+  right: 16px;
+  font-size: 18px;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: color var(--transition), transform var(--transition);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Textarea icon sits near top */
+.input-wrapper textarea ~ ion-icon {
+  top: 18px;
+  transform: none;
+}
+
+.input-wrapper:focus-within ion-icon {
+  color: var(--accent);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.input-wrapper textarea:focus ~ ion-icon {
+  transform: scale(1.1);
+  top: 18px;
+}
+
+/* ── Input / Textarea ────────────────────────────────────── */
+.input-field {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 46px 14px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text);
+  outline: none;
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+  -webkit-appearance: none;
+}
+
+.input-field::placeholder {
+  color: #3d3b4f;
+  font-style: italic;
+}
+
+.input-field:hover {
+  border-color: #3e3d52;
+}
+
+.input-field:focus {
+  border-color: var(--border-focus);
+  background: #101018;
+  box-shadow:
+    0 0 0 4px var(--accent-glow),
+    inset 0 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Textarea specific */
+textarea.input-field {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.6;
+  padding-top: 14px;
+}
+
+/* ── Submit Button ───────────────────────────────────────── */
+.btn.btn-primary {
+  margin-top: 8px;
+  padding: 15px 36px;
+  background: linear-gradient(135deg, #c9a96e 0%, #a07840 100%);
+  border: none;
+  border-radius: var(--radius);
+  color: #0d0d0f;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  align-self: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+
+  /* Sheen overlay */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 35%,
+      rgba(255,255,255,0.22) 50%,
+      transparent 65%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+}
+
+.btn.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(201,169,110,0.3);
+  filter: brightness(1.08);
+}
+
+.btn.btn-primary:hover::before {
+  transform: translateX(200%);
+}
+
+.btn.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(201,169,110,0.2);
+}
+
+/* ── Validation States ───────────────────────────────────── */
+.input-field:invalid:not(:placeholder-shown) {
+  border-color: var(--error);
+  box-shadow: 0 0 0 4px rgba(224, 92, 92, 0.12);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 560px) {
+  .contact-form {
+    padding: 32px 24px;
+  }
+
+  .btn.btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+    .contact{
+        padding-left: 30px
+    }
+    .contact form{
+        margin-top: 15%
+    }
+}
+
+@media (max-width: 1200px) and (min-width:769px){
+    .contact{
+        padding-left: 20px
+    }
+}
