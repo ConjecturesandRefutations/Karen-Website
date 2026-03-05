@@ -30,7 +30,8 @@
 
 @media (max-width: 768px) {
     .about{
-        padding-left: 30px
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
