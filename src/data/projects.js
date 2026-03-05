@@ -45,9 +45,9 @@ export const projects = [
     title: "Bienestar",
     category: "Concept & Exhibition Design",
     featuredImage: bienestarFeatured,
-    content: `
+    content: [`
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.
-    `,
+    `],
     images: [
       bienestarTwo,
       bienestarThree,
@@ -61,9 +61,9 @@ export const projects = [
     title: "Visa Conexiones",
     category: "Concept & Exhibition Design",
     featuredImage: visaFeatured,
-    content: `
+    content: [`
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.
-    `,
+    `],
     images: [
       visaTwo,
       visaThree,
