@@ -4,8 +4,9 @@ export default function Contact() {
 
   return (
     <div className="contact">
+      
           <form action="https://formsubmit.co/karen.natharen@gmail.com" method="POST" className="contact-form">
-
+          <h1 className="contact-title">Get in Touch by filling out this form:</h1>
           <div className="form-wrapper">
 
             <label for="name" className="form-label">Name</label>
