@@ -25,13 +25,16 @@
 }
 
 .profile-photo{
-    max-width: 300px
+    max-width: 350px
 }
 
 @media (max-width: 768px) {
     .about{
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .profile-photo{
+        max-width: 300px;
     }
 }
 

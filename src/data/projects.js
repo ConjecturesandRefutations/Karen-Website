@@ -24,13 +24,11 @@ export const projects = [
   {
     id: "banco-de-mexico",
     title: "Banco de Mexico",
-    category: "Concept & Exhibition Design",
+    category: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: bancoFeatured,
     content: [
-      `Conoce cuál es el papel del Banco de México en nuestra vida, el Banco de México contribuye al bienestar de las personas al mantener la estabilidad de precios, ya que cuida el poder adquisitivo de nuestro dinero para que podamos decidir qué hacer con él en el presente y en el futuro. `,
-  `En esta sala se explican las funciones del Banco mediante interactivos que enfatizan su objetivo prioritario y cómo ello se relaciona con la vida cotidiana de todos los mexicanos. El hilo conductor de las explicaciones es el dinero y sus distintas presentaciones con lo cual se introduce el sistema financiero y los sistemas de pagos.`,
-`La finalidad de esta perspectiva de las finanzas en la sociedad es que el visitante comprenda cómo el objetivo prioritario del Banco de México –procurar la estabilidad de precios o combatir la inflación-, repercute directamente en la mayoría de sus actividades. La exposición también pretende explicar con mayor profundidad cómo ejerce el Banco de México su política monetaria mediante un ejercicio interactivo que muestra, de forma práctica, la interacción entre la tasa de interés de referencia que establece la Junta de Gobierno del banco central y la tasa de inflación futura.`,
-`La exposición se completa con reseñas históricas de los procesos inflacionarios y sus consecuencias sobre la economía del país, así como con los ejemplos más característicos de otras economías.`,
+      `Permanent exhibition about the Central Bank of Mexico exploring the financial system and its impact on everyday life.`,
+  `For this project I wanted to incorporate elements of the iconic building of the Central Bank, keeping the language of steel structures and solid forms as symbols of stability and reliability, brought into a dynamic exhibition environment with bright colors and animated light details. Interactive stations, including multiplayer games and role-playing experiences, were integrated to communicate the principles of monetary policy in an engaging and approachable way.`,
     ],
     images: [
       bancoTwo,
@@ -43,10 +41,12 @@ export const projects = [
   {
     id: "bienestar",
     title: "Bienestar",
-    category: "Concept & Exhibition Design",
+    category: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: bienestarFeatured,
     content: [`
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.
+      Permanent exhibition illustrating how economic growth relates to quality of life, showing how subjective factors and different conditions influence the individual perception and global indicators such as the Better Life Index. 
+    `,
+  `For this project, I created a concept based on the sunrise, which can serve as an abstract yet universal symbol of well-being and enjoyment. With gradient walls painted by hand and a mix of natural woods, we created a warmer, more human atmosphere, contrasting with the more technical feel of the rest of the museum. 
     `],
     images: [
       bienestarTwo,
@@ -58,11 +58,13 @@ export const projects = [
   },
   {
     id: "visa_conexiones",
-    title: "Visa Conexiones",
-    category: "Concept & Exhibition Design",
+    title: "Sala El futuro del dinero",
+    category: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: visaFeatured,
     content: [`
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis tellus nunc, nec mattis nisi maximus in. Praesent sodales elementum ex, et aliquet nulla aliquam a. Ut interdum lorem eget purus mattis, sed blandit nisl suscipit. Sed sed quam non massa volutpat euismod. Nam quis vulputate est, elementum blandit enim. In nibh lorem, eleifend eu ex eget, posuere rutrum ipsum. Vivamus placerat egestas magna, in placerat tortor feugiat non. Nullam mollis nibh sem, quis volutpat eros sagittis eu. Etiam sapien tortor, porta at urna fringilla, elementum rhoncus lorem. Morbi vitae felis vel lectus gravida congue.
+      Exhibition designed to introduce visitors to emerging tools and technologies for digital payments and electronic transactions. Through a range of interactive media, including audio installations, video games and a 360° projection, it explores the evolution of the concept of money into an intangible transaction system. 
+    `,
+  `The design challenge was to transform four small rooms of a 300-year-old, protected building into a futuristic gallery that would feel like one single exhibition space that encourages visitors to explore and interact with each station.
     `],
     images: [
       visaTwo,

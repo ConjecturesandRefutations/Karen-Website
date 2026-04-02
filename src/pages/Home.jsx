@@ -67,7 +67,7 @@ export default function Home() {
               opacity: 0.7,
             }}
           >
-            Exhibition designer · Creative Director · Producer
+            Exhibition designer · Multimedia Experience designer · Creative Director
           </p>
         </div>
       )}
