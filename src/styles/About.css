@@ -25,7 +25,16 @@
 }
 
 .profile-photo{
-    max-width: 350px
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.about-left-half{
+    align-content: center;
+}
+
+.profile-photo{
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
