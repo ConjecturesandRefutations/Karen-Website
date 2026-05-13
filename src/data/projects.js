@@ -82,7 +82,7 @@ export const projects = [
       visaFive,
     ]
   },
-  {
+/*   {
   id: "bajo_la_espuma",
   title: "Bajo la Espuma",
   category: "Exhibition Designer – Spatial Concept - Interactive media integration",
@@ -99,5 +99,5 @@ export const projects = [
     visaFour,
     visaFive,
   ]
-}
+} */
 ];
