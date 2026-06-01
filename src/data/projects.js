@@ -82,16 +82,15 @@ export const projects = [
       visaFive,
     ]
   },
-/*   {
+   {
   id: "bajo_la_espuma",
   title: "Bajo la Espuma",
   category: "Exhibition Designer – Spatial Concept - Interactive media integration",
   featuredImage: visaFeatured,
   content: [`
-    Exhibition designed to introduce visitors to emerging tools and technologies for digital payments and electronic transactions. Through a range of interactive media, including audio installations, video games and a 360° projection, it explores the evolution of the concept of money into an intangible transaction system. 
+    
   `,
-`The design challenge was to transform four small rooms of a 300-year-old, protected building into a futuristic gallery that would feel like one single exhibition space that encourages visitors to explore and interact with each station.
-  `],
+` `],
   images: [
     visaTwo,
     visaThree,
@@ -99,5 +98,5 @@ export const projects = [
     visaFour,
     visaFive,
   ]
-} */
+} 
 ];
