@@ -20,11 +20,11 @@ import visaFour from "../assets/images/Visa_Conexiones/Four.jpg";
 import visaFive from "../assets/images/Visa_Conexiones/Five.jpg";
 
 //Bajo la Espuma
-/* import bajoFeatured from "../assets/images/Bajo_la_Espuma/Featured"
+import bajoFeatured from "../assets/images/Bajo_la_Espuma/Featured"
 import bajoTwo from "../assets/images/Bajo_la_Espuma/Two.jpg";
 import bajoThree from "../assets/images/Bajo_la_Espuma/Three.jpg";
 import bajoFour from "../assets/images/Bajo_la_Espuma/Four.jpg";
-import bajoFive from "../assets/images/Bajo_la_Espuma/Five.jpg"; */
+import bajoFive from "../assets/images/Bajo_la_Espuma/Five.jpg"; 
 
 
 
@@ -86,17 +86,17 @@ export const projects = [
   id: "bajo_la_espuma",
   title: "Bajo la Espuma",
   category: "Exhibition Designer – Spatial Concept - Interactive media integration",
-  featuredImage: visaFeatured,
+  featuredImage: bajoFeatured,
   content: [`
     
   `,
 ` `],
   images: [
-    visaTwo,
-    visaThree,
-    visaFeatured,
-    visaFour,
-    visaFive,
+    bajoTwo,
+    bajoThree,
+    bajoFeatured,
+    bajoFour,
+    bajoFive,
   ]
 } 
 ];
