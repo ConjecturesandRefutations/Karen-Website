@@ -1,4 +1,4 @@
-import colours from "../assets/images/colours.jpg";
+import colours from "../assets/images/KN.jpeg";
 
 export default function About() {
 
