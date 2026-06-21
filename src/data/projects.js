@@ -88,7 +88,7 @@ export const projects = [
   category: "Exhibition Designer – Spatial Concept - Interactive media integration",
   featuredImage: bajoFeatured,
   content: [`
-    
+    DESCRIPTION COMING SOON!
   `],
   images: [
     bajoTwo,
