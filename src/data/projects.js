@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     id: "visa_conexiones",
-    title: "Sala El futuro del dinero",
+    title: "El futuro del dinero",
     category: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: visaFeatured,
     content: [`
