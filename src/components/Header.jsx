@@ -28,6 +28,9 @@ export default function Header() {
           <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>
             About
           </Link>
+          <Link to="/process" className="nav-link" onClick={() => setMenuOpen(false)}>
+            Process
+          </Link>
           <Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>
             Contact
           </Link>

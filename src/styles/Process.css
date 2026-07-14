@@ -1,0 +1,100 @@
+
+.process-page{
+  padding-bottom: 8%;
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* 3x3 Grid Layout */
+.process-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 16px; /* Spacing between grid cells */
+  margin: 0 auto;
+}
+
+/* Ensures all 9 slots are identical, perfect squares */
+.grid-slot {
+  position: relative;
+  aspect-ratio: 1 / 1; /* Forces a perfect square shape */
+  width: 100%;
+  background-color: #f3f4f6; /* Gray background for empty slots */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Before & After Image Wrapper */
+.image-swap-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer
+}
+
+/* Common image sizing rules */
+.image-swap-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents image distortion */
+  transition: opacity 0.35s ease-in-out; /* Smooth fade effect */
+}
+
+/* B Image: Sits underneath and is fully visible */
+.img-default {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* A Image: Sits on top and is invisible until hovered */
+.img-hover {
+  z-index: 2;
+  opacity: 0;
+}
+
+/* Hover swap behavior */
+.image-swap-container:hover .img-hover {
+  opacity: 1;
+}
+
+/* Styling for the 5 placeholder slots */
+.placeholder-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(125, 125, 125);
+}
+
+.process-title{
+    color: white !important;
+    font-family: "Neulis", sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .process-grid-container {
+    grid-template-columns: 1fr; 
+    gap: 12px; 
+  }
+  .process-page{
+    padding-top: 20%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+    .process-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

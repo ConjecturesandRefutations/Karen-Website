@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjectPage from "./pages/ProjectPage";
+import Process from "./pages/Process";
 import Header from "./components/Header";
 import "./App.css";
 import "./styles/Header.css";
 import "./styles/About.css";
+import "./styles/Process.css";
 import "./styles/Contact.css";
 import ScrollToTop from "./helpers/ScrollToTop";
 
@@ -20,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/process" element={<Process />} />
         <Route path="/project/:id" element={<ProjectPage />} />
       </Routes>
     </BrowserRouter>
