@@ -17,7 +17,7 @@
 /* Ensures all 9 slots are identical, perfect squares */
 .grid-slot {
   position: relative;
-  aspect-ratio: 1 / 1; /* Forces a perfect square shape */
+  aspect-ratio: 4 / 3; /* Forces a perfect square shape */
   width: 100%;
   background-color: #f3f4f6; /* Gray background for empty slots */
   border-radius: 8px;
