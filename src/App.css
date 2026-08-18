@@ -489,3 +489,19 @@
     margin-top: 5%
 }
 }
+
+@media (max-width: 768px) {
+  .inner-project-content,
+  .inner-project-content:not(:has(.masonry-grid)) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .inner-project-content-body {
+    position: static;
+  }
+
+  .project-video-container {
+    width: 100%;
+  }
+}
