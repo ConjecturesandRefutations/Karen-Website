@@ -9,7 +9,6 @@ import "./App.css";
 import "./styles/Header.css";
 import "./styles/About.css";
 import "./styles/Process.css";
-import "./styles/Multimedia.css";
 import "./styles/Contact.css";
 import ScrollToTop from "./helpers/ScrollToTop";
 
