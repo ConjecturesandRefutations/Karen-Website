@@ -515,3 +515,10 @@
         margin-bottom: 10px
     }
 }
+
+@media (max-width: 768px) {
+    .inner-project-category{
+        margin-bottom: 15px !important
+    }
+}
+
