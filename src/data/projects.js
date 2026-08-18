@@ -97,5 +97,27 @@ export const projects = [
     bajoFour,
     bajoFive,
   ]
-} 
+},
+  {
+  id: "input_output",
+  title: "input = output",
+  category: "Exhibition Designer – Spatial Concept - Interactive media integration",
+  vimeo: "https://player.vimeo.com/video/518457855",
+  content: [`
+    Interactive installation that explores the different states of mental activity. Processing real time data from an EEG brain activity tracker into animated graphics projected over an immersive sculpture producing a synesthesia between the user's mental state, the audiovisual surroundings and the rest of the participants.
+  `],
+  images: [
+  ]
+},
+  {
+  id: "underlink",
+  title: "Underlink",
+  category: "Exhibition Designer – Spatial Concept - Interactive media integration",
+  vimeo: "https://player.vimeo.com/video/1077785097",
+  content: [`
+    A multimedia installation that combines an interactive light and sound piece with live recordings of the participants' voices responding to questions like: what do you need? and what can you give? within a sculpture that resembles the interdependence of all of our actions into a complex living network that is giving us feedback and support.
+  `],
+  images: [
+  ]
+}    
 ];

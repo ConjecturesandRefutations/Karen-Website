@@ -341,6 +341,34 @@
   margin: 0 0 4rem;
 }
 
+.project-media-container iframe{
+    border: 1px solid white !important;
+    border-radius: 5px
+}
+
+/* Shared media wrapper constraint */
+.project-media-container {
+  width: 100%;
+  max-width: 763px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.project-card-featured-image {
+  width: 100%;
+  max-height: 553px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+/* Tablet breakpoint update */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .project-media-container {
+    max-width: 400px;
+  }
+}
 
 /* ── Responsive: stack at 768px ───────────────────────── */
 @media (max-width: 768px) {

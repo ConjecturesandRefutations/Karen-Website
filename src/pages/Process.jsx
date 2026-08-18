@@ -13,7 +13,7 @@ import sixb from "../assets/images/Process/6/6B.jpg";
 import sevena from "../assets/images/Process/7/7A.png";
 import sevenb from "../assets/images/Process/7/7B.jpg";
 
-export default function About() {
+export default function Process() {
   // Define the 9 grid slots. 4 are filled with your before/after images, 5 are placeholders.
   const gridSlots = [
     { id: 1, isFilled: true, imgA: onea, imgB: oneb, alt: "Process 1" },

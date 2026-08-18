@@ -1,4 +1,72 @@
-/* Header.css */
+
+/* Projects dropdown */
+.nav-dropdown {
+  position: relative;
+    z-index: 999 !important
+}
+
+/* Projects button */
+.projects-link {
+  background: none;
+  border: none;
+  cursor: pointer;   
+}
+
+/* Arrow */
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+.projects-open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 220px;
+  padding: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* Desktop hover */
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown links */
+.dropdown-link {
+  padding: 8px 0;
+  text-decoration: none;
+  white-space: nowrap;
+  color: white !important;
+  font-family: 'Neulis'; 
+}
+
+.dropdown-link:hover {
+  opacity: 0.6;
+}
+
 .site-header {
   width: 100%;
   background: black;
