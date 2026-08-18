@@ -363,6 +363,10 @@
   transition: transform 0.2s ease;
 }
 
+.project-media-container:has(iframe){
+    border-right: 1px solid white !important;
+}
+
 /* Tablet breakpoint update */
 @media (max-width: 1200px) and (min-width: 769px) {
   .project-media-container {
