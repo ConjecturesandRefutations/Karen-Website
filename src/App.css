@@ -505,3 +505,13 @@
     width: 100%;
   }
 }
+
+@media(max-width:640px){
+    .project-card{
+        margin-bottom: 0;
+        padding-bottom: 10px
+    }
+    .project-title{
+        margin-bottom: 10px
+    }
+}
