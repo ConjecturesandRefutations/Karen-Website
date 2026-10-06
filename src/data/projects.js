@@ -33,8 +33,7 @@ export const projects = [
     id: "banco-de-mexico",
     title: "Banco de Mexico",
     category: "Exhibition Design",
-    long_category: "Exhibition Designer – Spatial Concept - Interactive media integration",
-    long_category: "Exhibition Designer – Spatial Concept - Interactive media integration",
+    role: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: bancoFeatured,
     content: [
       `Permanent exhibition about the Central Bank of Mexico exploring the financial system and its impact on everyday life.`,
@@ -52,7 +51,7 @@ export const projects = [
     id: "bienestar",
     title: "Bienestar",
     category: "Exhibition Design",
-    long_category: "Exhibition Designer – Spatial Concept - Interactive media integration",
+    role: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: bienestarFeatured,
     content: [`
       Permanent exhibition illustrating how economic growth relates to quality of life, showing how subjective factors and different conditions influence the individual perception and global indicators such as the Better Life Index. 
@@ -71,7 +70,7 @@ export const projects = [
     id: "visa_conexiones",
     title: "El futuro del dinero",
     category: "Exhibition Design",
-    long_category: "Exhibition Designer – Spatial Concept - Interactive media integration",
+    role: "Exhibition Designer – Spatial Concept - Interactive media integration",
     featuredImage: visaFeatured,
     content: [`
       Exhibition designed to introduce visitors to emerging tools and technologies for digital payments and electronic transactions. Through a range of interactive media, including audio installations, video games and a 360° projection, it explores the evolution of the concept of money into an intangible transaction system. 
@@ -90,7 +89,7 @@ export const projects = [
   id: "bajo_la_espuma",
   title: "Bajo la Espuma",
   category: "Exhibition Design",
-  long_category: "Exhibition Designer – Spatial Concept - Interactive media integration",
+  role: "Exhibition Designer – Spatial Concept - Interactive media integration",
   featuredImage: bajoFeatured,
   content: [`
     DESCRIPTION COMING SOON!
@@ -107,7 +106,7 @@ export const projects = [
   id: "input_output",
   title: "input = output",
   category: "Multimedia Installation",
-  long_category: "Multimedia Installation",
+  role: "Concept – Spatial Design - Production",
   vimeo: "https://player.vimeo.com/video/518457855",
   content: [`
     Interactive installation that explores the different states of mental activity. Processing real time data from an EEG brain activity tracker into animated graphics projected over an immersive sculpture producing a synesthesia between the user's mental state, the audiovisual surroundings and the rest of the participants.
@@ -119,12 +118,24 @@ export const projects = [
   id: "underlink",
   title: "Underlink",
   category: "Multimedia Installation",
-  long_category: "Multimedia Installation",
+  role: "Spatial Design - Creative Direction",
   vimeo: "https://player.vimeo.com/video/1077785097",
   content: [`
     A multimedia installation that combines an interactive light and sound piece with live recordings of the participants' voices responding to questions like: what do you need? and what can you give? within a sculpture that resembles the interdependence of all of our actions into a complex living network that is giving us feedback and support.
   `],
   images: [
   ]
-}    
+},
+  {
+  id: "Everything_is_Everyone",
+  title: "Everything is Everyone",
+  category: "Multimedia Installation",
+  role: "Concept – Production - Creative Direction",
+  vimeo: "https://player.vimeo.com/video/1233209643",
+  content: [`
+    An interactive installation for multiple participants. Using generative visuals and real-time interaction, the work responds to the presence and stillness of the participants, creating a visual composition that can only emerge through collective interaction.
+  `],
+  images: [
+  ]
+}        
 ];
