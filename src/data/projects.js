@@ -118,7 +118,7 @@ export const projects = [
   id: "underlink",
   title: "Underlink",
   category: "Multimedia Installation",
-  role: "Spatial Design - Creative Direction",
+  role: "Concept – Spatial Design - Creative Direction",
   vimeo: "https://player.vimeo.com/video/1077785097",
   content: [`
     A multimedia installation that combines an interactive light and sound piece with live recordings of the participants' voices responding to questions like: what do you need? and what can you give? within a sculpture that resembles the interdependence of all of our actions into a complex living network that is giving us feedback and support.
