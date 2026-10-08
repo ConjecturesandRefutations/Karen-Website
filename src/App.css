@@ -536,8 +536,8 @@
     }
 }
 
-@media(max-width:640px){
+@media(max-width:768px){
 .exhibition-title, .multimedia-title {
-    margin-top: 75px !important
+    margin-top: 15% !important
 }
 }
