@@ -170,6 +170,55 @@
   gap: 1.5rem;
 }
 
+/* Wrapper for Projects + dropdown */
+.nav-item {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 769px) {
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    padding: 0.5rem 0;
+    background: black;
+    z-index: 100;
+  }
+
+  .nav-item.has-dropdown:hover .dropdown,
+  .nav-item.has-dropdown:focus-within .dropdown {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    position: static;
+    padding-left: 1rem;
+  }
+
+  .dropdown.open {
+    display: flex;
+  }
+}
+
 /* Mobile: <=640px */
 @media (max-width: 640px) {
   .header-inner {
