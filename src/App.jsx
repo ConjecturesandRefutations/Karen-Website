@@ -4,6 +4,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Process from "./pages/Process";
 import Project from "./pages/Project";
+import ExhibitionDesign from "./pages/ExhibitionDesign";
+import MultimediaInstallation from "./pages/MultimediaInstallation";
 import Header from "./components/Header";
 import "./App.css";
 import "./styles/Header.css";
@@ -18,6 +20,9 @@ function App() {
     <Header />
     <ScrollToTop />
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/exhibition-design" element={<ExhibitionDesign />} />
+        <Route path="/multimedia-installation" element={<MultimediaInstallation />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

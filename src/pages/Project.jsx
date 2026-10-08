@@ -21,7 +21,7 @@ export default function ProjectPage() {
   return (
     <div className="project-page">
       <h1 className="inner-project-title">{project.title}</h1>
-      <p className="inner-project-category">{project.role}</p>
+      <p className="inner-project-category"><b>Role:</b> {project.role}</p>
 
       <div className="inner-project-content">
         <div className="inner-project-content-body">

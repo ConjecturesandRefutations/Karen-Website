@@ -2,6 +2,20 @@
   color: white;
 }
 
+.exhibition-title, .multimedia-title {
+  font-family: "Neulis", sans-serif;
+  font-weight: 300;
+  font-size: 2.7rem;
+  margin-bottom: -50px;
+  color: white;
+}
+  
+.exhibition-title, .multimedia-title  {
+  position: relative;
+  display: inline-block;  
+  cursor: pointer;
+}
+
 .contact-drawer__value{
     text-transform: uppercase
 }
@@ -522,3 +536,8 @@
     }
 }
 
+@media(max-width:640px){
+.exhibition-title, .multimedia-title {
+    margin-top: 75px !important
+}
+}
