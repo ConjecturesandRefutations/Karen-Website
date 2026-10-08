@@ -266,3 +266,15 @@
         padding-right: 10%
     }
 }
+
+@media (max-width: 768px) {
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item > .nav-link {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
