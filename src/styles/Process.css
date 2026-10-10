@@ -77,9 +77,10 @@
 
 .process-title{
     color: white !important;
-    font-family: "Neulis", sans-serif;
+    font-family: 'Montserrat';
     font-weight: 300;
     margin-top: 0;
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -103,8 +104,7 @@
 
 @media(max-width:640px){
     .process-title{
-        font-size: 14px;
-        font-family: 'Montserrat' !important;
+        font-size: 14px !important;
         color: rgb(125, 125, 125) !important;
         text-transform: uppercase;
         letter-spacing: 2.8px

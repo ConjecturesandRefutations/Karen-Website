@@ -29,24 +29,24 @@ export default function Process() {
     { id: 2, isFilled: true, imgA: threea, imgB: threeb, alt: "Process 3" },
     { id: 3, isFilled: true, imgA: foura, imgB: fourb, alt: "Process 4" },
     { id: 4, isFilled: true, imgA: fivea, imgB: fiveb, alt: "Process 5" },
-    { id: 5, isFilled: true, imgA: sixa, imgB: sixb, alt: "Process 6" },
-    { id: 6, isFilled: true, imgA: eighta, imgB: eightb, alt: "Process 8" },
-    { id: 7, isFilled: true, imgA: ninea, imgB: nineb, alt: "Process 9" },
-    { id: 8, isFilled: true, videoA: elevena, imgB: elevenb, alt: "Process 10" },
+    { id: 5, isFilled: true, imgA: elevenb, videoB: elevena, alt: "Process 10" },
+    { id: 6, isFilled: true, imgA: sixa, imgB: sixb, alt: "Process 6" },
+    { id: 7, isFilled: true, imgA: eighta, imgB: eightb, alt: "Process 8" },
+    { id: 8, isFilled: true, imgA: ninea, imgB: nineb, alt: "Process 9" },
     { id: 9, isFilled: false },
   ];
 
-  const handleEnter = (id) => {
-    const v = videoRefs.current[id];
-    if (v && v.paused) {
-      v.currentTime = 0;
-      v.play().catch(() => {});
+const handleEnter = (id) => {
+    const vA = videoRefs.current[`${id}-A`];
+    if (vA && vA.paused) {
+      vA.currentTime = 0;
+      vA.play().catch(() => {});
     }
   };
 
   const handleLeave = (id) => {
-    const v = videoRefs.current[id];
-    if (v) v.pause();
+    const vA = videoRefs.current[`${id}-A`];
+    if (vA) vA.pause();
   };
 
   return (
@@ -63,10 +63,29 @@ export default function Process() {
           >
             {slot.isFilled ? (
               <div className="image-swap-container">
-                {/* B image (Displays initially) */}
-                <img src={slot.imgB} alt={`${slot.alt} After`} className="img-default" />
+                {/* Default State (B) - Displays initially */}
+                {slot.videoB ? (
+                  <video
+                    src={slot.videoB}
+                    className="img-default"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    aria-label={`${slot.alt} Default Video`}
+                    ref={(el) => {
+                      if (el) {
+                        el.muted = true;
+                        videoRefs.current[`${slot.id}-B`] = el;
+                      }
+                    }}
+                  />
+                ) : (
+                  <img src={slot.imgB} alt={`${slot.alt} After`} className="img-default" />
+                )}
 
-                {/* A: video or image (Displays on hover) */}
+                {/* Hover State (A) - Displays on hover */}
                 {slot.videoA ? (
                   <video
                     src={slot.videoA}
@@ -75,11 +94,11 @@ export default function Process() {
                     loop
                     playsInline
                     preload="auto"
-                    aria-label={`${slot.alt} Before`}
+                    aria-label={`${slot.alt} Hover Video`}
                     ref={(el) => {
                       if (el) {
                         el.muted = true;
-                        videoRefs.current[slot.id] = el;
+                        videoRefs.current[`${slot.id}-A`] = el;
                       }
                     }}
                   />
