@@ -86,6 +86,9 @@
     font-weight: 300;
     margin-top: 0;
     font-size: 20px;
+    color: rgb(125, 125, 125) !important;
+        text-transform: uppercase;
+        letter-spacing: 2.8px
 }
 
 @media (max-width: 768px) {
