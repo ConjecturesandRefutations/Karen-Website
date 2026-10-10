@@ -18,7 +18,7 @@ import eighta from "../assets/images/Process/8/8A.jpg";
 import eightb from "../assets/images/Process/8/8B.jpg";
 import ninea from "../assets/images/Process/9/9A.jpg";
 import nineb from "../assets/images/Process/9/9B.jpg";
-import elevena from "../assets/videos/Process/process-hover.mp4";
+import elevena from "../assets/videos/Process/11A.mp4";
 import elevenb from "../assets/images/Process/11/11B.png";
 
 export default function Process() {
@@ -38,7 +38,7 @@ export default function Process() {
 
   const handleEnter = (id) => {
     const v = videoRefs.current[id];
-    if (v) {
+    if (v && v.paused) {
       v.currentTime = 0;
       v.play().catch(() => {});
     }
@@ -59,6 +59,7 @@ export default function Process() {
             className="grid-slot"
             onMouseEnter={() => handleEnter(slot.id)}
             onMouseLeave={() => handleLeave(slot.id)}
+            onTouchStart={() => handleEnter(slot.id)}
           >
             {slot.isFilled ? (
               <div className="image-swap-container">
@@ -76,7 +77,10 @@ export default function Process() {
                     preload="auto"
                     aria-label={`${slot.alt} Before`}
                     ref={(el) => {
-                      if (el) videoRefs.current[slot.id] = el;
+                      if (el) {
+                        el.muted = true;
+                        videoRefs.current[slot.id] = el;
+                      }
                     }}
                   />
                 ) : (
