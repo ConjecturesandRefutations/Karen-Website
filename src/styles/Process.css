@@ -33,15 +33,16 @@
   cursor: pointer
 }
 
-/* Common image sizing rules */
-.image-swap-container img {
+/* Common image/video sizing rules */
+.image-swap-container img,
+.image-swap-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Prevents image distortion */
-  transition: opacity 0.35s ease-in-out; /* Smooth fade effect */
+  object-fit: cover;
+  transition: opacity 0.35s ease-in-out;
 }
 
 /* B Image: Sits underneath and is fully visible */
