@@ -33,6 +33,11 @@
   cursor: pointer
 }
 
+/* .image-swap-container video {
+  object-fit: contain !important;
+  background-color: #000;
+} */
+
 /* Common image/video sizing rules */
 .image-swap-container img,
 .image-swap-container video {
