@@ -18,7 +18,7 @@ import eighta from "../assets/images/Process/8/8A.jpg";
 import eightb from "../assets/images/Process/8/8B.jpg";
 import ninea from "../assets/images/Process/9/9A.jpg";
 import nineb from "../assets/images/Process/9/9B.jpg";
-import elevena from "../assets/videos/process-hover.mp4";
+import elevena from "../assets/videos/Process/process-hover.mp4";
 import elevenb from "../assets/images/Process/11/11B.png";
 
 export default function Process() {
