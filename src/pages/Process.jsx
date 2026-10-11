@@ -20,6 +20,8 @@ import ninea from "../assets/images/Process/9/9A.jpg";
 import nineb from "../assets/images/Process/9/9B.jpg";
 import elevena from "../assets/videos/Process/11A.mp4";
 import elevenb from "../assets/images/Process/11/11B.png";
+import twelvea from "../assets/images/Process/12/12A.jpg";
+import twelveb from "../assets/images/Process/12/12B.jpg";
 
 export default function Process() {
   const videoRefs = useRef({});
@@ -33,7 +35,7 @@ export default function Process() {
     { id: 6, isFilled: true, imgA: sixa, imgB: sixb, alt: "Process 6" },
     { id: 7, isFilled: true, imgA: eighta, imgB: eightb, alt: "Process 8" },
     { id: 8, isFilled: true, imgA: ninea, imgB: nineb, alt: "Process 9" },
-    { id: 9, isFilled: false },
+    { id: 9, isFilled: true, imgA: twelvea, imgB: twelveb, alt: "Process 12" },
   ];
 
 const handleEnter = (id) => {

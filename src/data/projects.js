@@ -18,6 +18,7 @@ import visaTwo from "../assets/images/Visa_Conexiones/Two.jpg";
 import visaThree from "../assets/images/Visa_Conexiones/Three.jpg";
 import visaFour from "../assets/images/Visa_Conexiones/Four.jpg";
 import visaFive from "../assets/images/Visa_Conexiones/Five.jpg";
+import visaSix from "../assets/images/Visa_Conexiones/Six.jpg";
 
 //Bajo la Espuma
 import bajoFeatured from "../assets/images/Bajo_la_Espuma/Featured.jpg"
@@ -83,6 +84,7 @@ export const projects = [
       visaFeatured,
       visaFour,
       visaFive,
+      visaSix,
     ]
   },
    {
